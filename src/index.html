@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./output.css" />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .nav-link {
+        color: #94a3b8;
+        transition: color 0.3s;
+      }
+      .nav-link:hover {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body class="bg-whiten">
+    <!-- WRAPPER -->
+    <div class="min-h-screen flex flex-col">
+      <!-- NAVBAR -->
+      <nav class="flex-shrink-0 pt-4 px-4">
+        <div class="rounded-full bg-slate-900 shadow-lg px-6 py-3">
+          <!-- Desktop -->
+          <div class="hidden md:grid grid-cols-3 items-center">
+            <div class="flex justify-evenly">
+              <a href="#" class="nav-link text-sm">Home</a>
+              <a href="#" class="nav-link text-sm">About</a>
+              <a href="#" class="nav-link text-sm">Services</a>
+            </div>
+
+            <div class="text-center text-white font-semibold text-lg">Vinss Wayne</div>
+
+            <div class="flex justify-evenly">
+              <a href="#" class="nav-link text-sm">Resume</a>
+              <a href="#" class="nav-link text-sm">Projects</a>
+              <a href="#" class="nav-link text-sm">Contact</a>
+            </div>
+          </div>
+
+          <!-- Mobile -->
+          <div class="md:hidden flex items-center justify-between">
+            <span class="text-white font-semibold text-lg">Vinss Wayne</span>
+
+            <input type="checkbox" id="menu-toggle" class="hidden peer" />
+            <label for="menu-toggle" class="cursor-pointer text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </label>
+
+            <div
+              class="absolute left-1/2 top-full mt-4 w-[90%] -translate-x-1/2 rounded-2xl bg-slate-900 opacity-0 scale-95 pointer-events-none peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto transition-all duration-300 z-50"
+            >
+              <div class="flex flex-col items-center gap-4 py-4">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Services</a>
+                <a href="#" class="nav-link">Resume</a>
+                <a href="#" class="nav-link">Projects</a>
+                <a href="#" class="nav-link">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- MAIN -->
+      <main class="flex-1 overflow-auto">
+        <!-- HERO WRAPPER -->
+        <div class="min-h-[calc(100vh-88px)] flex flex-col justify-center px-4 pb-20">
+          <!-- HEADING -->
+          <div class="text-center mb-8 lg:mb-12">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+              Empowering Brands <br />
+              Through Creative Solutions
+            </h1>
+          </div>
+
+          <!-- HERO SECTION -->
+          <section>
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center gap-8 lg:gap-10">
+              <!-- LEFT -->
+              <div class="text-center md:text-left">
+                <p class="text-slate-600 text-base leading-relaxed">From web development to branding, we deliver innovative strategies that elevate your brand and drive growth.</p>
+              </div>
+
+              <!-- CENTER -->
+              <div class="relative flex justify-center items-center min-h-[400px] md:min-h-[450px]">
+                <!-- Background Circle -->
+                <div class="absolute w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-slate-200 rounded-full"></div>
+
+                <!-- Image -->
+                <img src="../image/image3.png" alt="Hero" class="relative z-10 max-h-[350px] md:max-h-[400px] lg:max-h-[450px] object-contain" />
+
+                <!-- Buttons -->
+                <div class="absolute -bottom-6 flex flex-col sm:flex-row gap-3 bg-white/80 backdrop-blur-sm px-5 py-4 rounded-xl shadow-lg z-20">
+                  <button class="px-5 py-2.5 rounded-full bg-lime-400 text-black font-semibold hover:bg-lime-500 transition whitespace-nowrap">Start Your Project</button>
+                  <button class="px-5 py-2.5 rounded-full bg-black text-white font-semibold hover:bg-black/80 transition whitespace-nowrap">Let's Collaborate</button>
+                </div>
+              </div>
+
+              <!-- RIGHT -->
+              <div class="text-center md:text-left">
+                <h2 class="text-2xl font-bold text-slate-900">Let's Connect</h2>
+                <a
+                  href="https://www.linkedin.com/in/davin-ammar-muhammad-816a552bb/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mt-3 p-5 bg-slate-500/10 rounded-2xl hover:bg-blue-600 transition group cursor-pointer flex items-center justify-center block"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-black group-hover:fill-white transition" viewBox="0 0 24 24">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- SECTION About -->
+        <section class="bg-black py-16 md:py-20">
+          <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="mb-16 md:mb-20 bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl px-8 py-10 md:py-12">
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+                <!-- Statistik -->
+                <div>
+                  <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">2000</h3>
+                  <p class="text-gray-300 text-xs md:text-sm lg:text-base">Company</p>
+                </div>
+                <div>
+                  <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">10<span class="text-lime-400">+</span></h3>
+                  <p class="text-gray-300 text-xs md:text-sm lg:text-base">Years Exp.</p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div>
+                  <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">800<span class="text-lime-400">+</span></h3>
+                  <p class="text-gray-300 text-xs md:text-sm lg:text-base">Hours of Digital</p>
+                </div>
+
+                <!-- Stat 4 -->
+                <div>
+                  <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">150M<span class="text-lime-400">+</span></h3>
+                  <p class="text-gray-300 text-xs md:text-sm lg:text-base">In Tracked Revenue</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start">
+              <!-- md:grid-cols-2 buat layout 2 kolom untuk layar md keatas, kalau grid-cols-1 default layout 1 kolom untuk ukuran layar mobile -->
+              <!-- LEFT - Title -->
+              <div>
+                <h2 class="text-white font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">Turning Ideas Into<br />Masterpieces</h2>
+              </div>
+
+              <!-- RIGHT - Description -->
+              <div>
+                <p class="text-gray-400 text-base md:text-lg leading-relaxed">
+                  We may be a compact team, but our creativity knows no bounds. By staying agile and working hand-in-hand with our clients, we transform ideas into cutting-edge designs that make a lasting impression.
+                </p>
+              </div>
+            </div>
+            <!-- Image -->
+            <!-- Image Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-12 md:mt-16 lg:mt-20">
+              <!-- LEFT - Single Large Image -->
+              <div class="h-full">
+                <img src="../image/Image3.jpg" alt="" class="w-full h-full object-cover rounded-2xl" />
+              </div>
+
+              <!-- RIGHT - Two Stacked Images -->
+              <div class="flex flex-col gap-6 md:gap-8">
+                <div class="flex-1">
+                  <img src="../image/Image2.jpg" alt="" class="w-full h-full object-cover rounded-2xl" />
+                </div>
+                <div class="flex-1">
+                  <img src="../image/Image4.jpg" alt="" class="w-full h-full object-cover rounded-2xl" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-[#1a1a1a] py-16 md:py-20 relative overflow-hidden">
+          <div class="max-w-7xl mx-auto px-4 md:px-8 rounded-4xl">
+            <!-- Grid utama: 2 kolom -->
+            <!-- grid-cols-12 buat layout 12 kolom -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+              <!-- LEFT COLUMN - Services List (5 kolom) -->
+              <!-- cols-span-5 buat layout berukuran 5 kolom dari 12, jadi sisanya 7 -->
+              <div class="lg:col-span-5 space-y-8">
+                <!-- Header -->
+                <div>
+                  <h2 class="text-white font-bold text-3xl md:text-4xl lg:text-5xl leading-tight mb-4">My <span class="bg-lime-400 text-black px-4 py-2 rounded-tl-4xl rounded-br-4xl inline-block">Services</span></h2>
+                  <p class="text-gray-400 text-base leading-relaxed">We offer a range of creative and digital services designed to help your brand stand out.</p>
+                </div>
+
+                <!-- Services List -->
+                <div class="space-y-4">
+                  <!-- Service 1 -->
+                  <div class="group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
+                    <div class="flex items-center justify-between">
+                      <p class="text-white text-lg">
+                        <span class="text-lime-400 font-bold mr-3">01</span>
+                        UI/UX Design
+                      </p>
+                      <svg class="w-6 h-6 text-gray-400 group-hover:text-lime-400 group-hover:translate-x-2 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Service 2 -->
+                  <div class="group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
+                    <div class="flex items-center justify-between">
+                      <p class="text-white text-lg">
+                        <span class="text-lime-400 font-bold mr-3">02</span>
+                        Web Development
+                      </p>
+                      <svg class="w-6 h-6 text-gray-400 group-hover:text-lime-400 group-hover:translate-x-2 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Service 3 -->
+                  <div class="group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
+                    <div class="flex items-center justify-between">
+                      <p class="text-white text-lg">
+                        <span class="text-lime-400 font-bold mr-3">03</span>
+                        3D Designs
+                      </p>
+                      <svg class="w-6 h-6 text-gray-400 group-hover:text-lime-400 group-hover:translate-x-2 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Service 4 -->
+                  <div class="group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
+                    <div class="flex items-center justify-between">
+                      <p class="text-white text-lg">
+                        <span class="text-lime-400 font-bold mr-3">04</span>
+                        Motion Graphics
+                      </p>
+                      <svg class="w-6 h-6 text-gray-400 group-hover:text-lime-400 group-hover:translate-x-2 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT COLUMN - Image & Description (7 kolom) -->
+              <!-- col-span-7 buat layout berukuran 7 kolom dari 12 -->
+              <div class="lg:col-span-7 flex items-start">
+                <!-- Wrapper untuk kontrol posisi -->
+                <div class="w-full mt-0 lg:mt-16 space-y-6">
+                  <!-- Image -->
+                  <div>
+                    <img src="../image/Image2.jpg" alt="Code Editor" class="w-full h-[250px] md:h-[280px] lg:h-[300px] object-cover rounded-3xl" />
+                  </div>
+
+                  <!-- Description -->
+                  <div class="text-white space-y-3">
+                    <h3 class="text-xl md:text-2xl font-bold">Why Choose Our Services?</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                      We combine creativity with technical expertise to deliver solutions that not only look great but also drive results. Our team is dedicated to bringing your vision to life.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black py-12 md:py-16 mx-auto">
+          <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <!-- Text dengan tanda + -->
+            <div class="text-center mb-1 md:mb-1.5">
+              <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                <span class="text-white">Innovate</span>
+                <span class="text-lime-400 mx-3 md:mx-4">-</span>
+                <span class="text-white">Inspire</span>
+                <span class="text-lime-400 mx-3 md:mx-4">-</span>
+                <span class="text-white">Create</span>
+              </h2>
+            </div>
+
+            <!-- Divider dengan icon + di tengah -->
+            <div class="relative flex items-center">
+              <!-- Garis kiri -->
+              <div class="flex-1 border-t border-gray-700"></div>
+
+              <!-- Icon + di tengah -->
+              <div class="px-4">
+                <span class="text-lime-400 text-2xl md:text-3xl font-bold">+</span>
+              </div>
+
+              <!-- Garis kanan -->
+              <div class="flex-1 border-t border-gray-700"></div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-[#1a1a1a] py-16 md:py-20 relative overflow-hidden">
+          <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+              <!-- Left Column - Text Content -->
+              <div class="lg:col-span-5 space-y-8">
+                <div>
+                  <h2 class="text-white font-bold text-3xl md:text-4xl lg:text-5xl leading-tight mb-4">My <span class="bg-lime-400 text-black px-4 py-2 rounded-lg inline-block">Skills</span></h2>
+                  <h3 class="text-gray-400 text-2xl md:text-3xl lg:text-4xl leading-relaxed">
+                    Let's Explore Popular <br />
+                    <span class="text-lime-400">Skills & Experience</span>
+                  </h3>
+                  <p class="text-gray-400 text-base leading-relaxed mt-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque praesentium dicta, ipsam fuga, possimus neque voluptatem at doloribus incidunt, magnam molestias necessitatibus soluta odit nesciunt veritatis
+                    voluptatibus. Labore, facilis?
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right Column - Skills Grid -->
+              <div class="lg:col-span-7">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  <!-- Skill Card 1 -->
+                  <div class="rounded-3xl bg-slate-800 border border-slate-700 hover:border-lime-400 overflow-hidden transition-all duration-300">
+                    <img src="../image/Image2.jpg" alt="HTML" class="w-full h-32 object-cover" />
+                    <div class="p-4">
+                      <h3 class="text-center text-white font-semibold text-lg">HTML</h3>
+                    </div>
+                  </div>
+
+                  <!-- Skill Card 2 -->
+                  <div class="rounded-3xl bg-slate-800 border border-slate-700 hover:border-lime-400 overflow-hidden transition-all duration-300">
+                    <img src="../image/Image2.jpg" alt="CSS" class="w-full h-32 object-cover" />
+                    <div class="p-4">
+                      <h3 class="text-center text-white font-semibold text-lg">CSS</h3>
+                    </div>
+                  </div>
+
+                  <!-- Skill Card 3 -->
+                  <div class="rounded-3xl bg-slate-800 border border-slate-700 hover:border-lime-400 overflow-hidden transition-all duration-300">
+                    <img src="../image/Image2.jpg" alt="JavaScript" class="w-full h-32 object-cover" />
+                    <div class="p-4">
+                      <h3 class="text-center text-white font-semibold text-lg">JavaScript</h3>
+                    </div>
+                  </div>
+
+                  <!-- Skill Card 4 -->
+                  <div class="rounded-3xl bg-slate-800 border border-slate-700 hover:border-lime-400 overflow-hidden transition-all duration-300">
+                    <img src="../image/Image2.jpg" alt="React" class="w-full h-32 object-cover" />
+                    <div class="p-4">
+                      <h3 class="text-center text-white font-semibold text-lg">React</h3>
+                    </div>
+                  </div>
+
+                  <!-- Skill Card 5 -->
+                  <div class="rounded-3xl bg-slate-800 border border-slate-700 hover:border-lime-400 overflow-hidden transition-all duration-300">
+                    <img src="../image/Image2.jpg" alt="Node.js" class="w-full h-32 object-cover" />
+                    <div class="p-4">
+                      <h3 class="text-center text-white font-semibold text-lg">Node.js</h3>
+                    </div>
+                  </div>
+
+                  <!-- Skill Card 6 -->
+                  <div class="rounded-3xl bg-slate-800 border border-slate-700 hover:border-lime-400 overflow-hidden transition-all duration-300">
+                    <img src="../image/Image2.jpg" alt="Tailwind" class="w-full h-32 object-cover" />
+                    <div class="p-4">
+                      <h3 class="text-center text-white font-semibold text-lg">Tailwind</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

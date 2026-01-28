@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.nav-link {
+  @apply relative text-slate-400 transition-colors duration-200 hover:text-green-400;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute left-1/2 -bottom-1 h-0.5 w-0 bg-green-400 transition-all duration-200;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+fontfamily: {
+  sans: [ "Inter", "sans-serif"];
+}
