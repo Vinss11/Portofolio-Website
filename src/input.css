@@ -15,5 +15,29 @@
 }
 
 fontfamily: {
-  sans: [ "Inter", "sans-serif"];
+  sans:
+    [ "Inter",
+    "sans-serif"];
+}
+
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        marquee: {
+          '0%': {
+            transform: "translateX(0)";
+          }
+          ,
+          '100%': {
+            transform: "translateX(-50%)";
+          }
+        }
+      }
+      ,
+      animation: {
+        marquee: "marquee 20s linear infinite";
+      }
+    }
+  }
 }
