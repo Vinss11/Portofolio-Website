@@ -17,6 +17,23 @@
       .nav-link:hover {
         color: white;
       }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .animate-marquee {
+        animation: marquee 20s linear infinite;
+      }
+
+      /* Pause saat hover (opsional) */
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
     </style>
   </head>
 
@@ -378,6 +395,29 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="relative overflow-hidden bg-black py-16 transform -skew-y-3">
+            <!-- Bagian yang bergerak -->
+            <div class="flex animate-marquee whitespace-nowrap">
+              <!-- Group 1 - Original -->
+              <div class="flex items-center mx-4">
+                <img src="logo1.png" alt="Logo 1" class="h-20 w-20 mx-8" />
+                <img src="logo2.png" alt="Logo 2" class="h-20 w-20 mx-8" />
+                <img src="logo3.png" alt="Logo 3" class="h-20 w-20 mx-8" />
+                <img src="logo4.png" alt="Logo 4" class="h-20 w-20 mx-8" />
+                <img src="logo5.png" alt="Logo 5" class="h-20 w-20 mx-8" />
+              </div>
+              <!-- Group 2 - Duplicate untuk seamless loop -->
+              <div class="flex items-center mx-4">
+                <img src="logo1.png" alt="Logo 1" class="h-20 w-20 mx-8" />
+                <img src="logo2.png" alt="Logo 2" class="h-20 w-20 mx-8" />
+                <img src="logo3.png" alt="Logo 3" class="h-20 w-20 mx-8" />
+                <img src="logo4.png" alt="Logo 4" class="h-20 w-20 mx-8" />
+                <img src="logo5.png" alt="Logo 5" class="h-20 w-20 mx-8" />
               </div>
             </div>
           </div>
