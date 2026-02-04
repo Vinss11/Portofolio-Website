@@ -223,7 +223,7 @@
                 <!-- Services List -->
                 <div class="space-y-4">
                   <!-- Service 1 -->
-                  <div class="group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
+                  <div class="service-item group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
                     <div class="flex items-center justify-between">
                       <p class="text-white text-lg">
                         <span class="text-lime-400 font-bold mr-3">01</span>
@@ -236,7 +236,7 @@
                   </div>
 
                   <!-- Service 2 -->
-                  <div class="group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
+                  <div class="service-item group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
                     <div class="flex items-center justify-between">
                       <p class="text-white text-lg">
                         <span class="text-lime-400 font-bold mr-3">02</span>
@@ -249,7 +249,7 @@
                   </div>
 
                   <!-- Service 3 -->
-                  <div class="group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
+                  <div class="service-item group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
                     <div class="flex items-center justify-between">
                       <p class="text-white text-lg">
                         <span class="text-lime-400 font-bold mr-3">03</span>
@@ -262,7 +262,7 @@
                   </div>
 
                   <!-- Service 4 -->
-                  <div class="group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
+                  <div class="service-item group border border-gray-700 hover:border-lime-400 rounded-full px-8 py-5 transition-all duration-300 cursor-pointer">
                     <div class="flex items-center justify-between">
                       <p class="text-white text-lg">
                         <span class="text-lime-400 font-bold mr-3">04</span>
@@ -283,13 +283,13 @@
                 <div class="w-full mt-0 lg:mt-16 space-y-6">
                   <!-- Image -->
                   <div>
-                    <img src="../image/Image2.jpg" alt="Code Editor" class="w-full h-[250px] md:h-[280px] lg:h-[300px] object-cover rounded-3xl" />
+                    <img id="service-image" src="../image/Image2.jpg" alt="Web Development" class="w-full h-[250px] md:h-[280px] lg:h-[300px] object-cover rounded-3xl transition-opacity duration-300" style="opacity: 1" />
                   </div>
 
                   <!-- Description -->
                   <div class="text-white space-y-3">
-                    <h3 class="text-xl md:text-2xl font-bold">Why Choose Our Services?</h3>
-                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                    <h3 id="service-heading" class="text-xl md:text-2xl font-bold transition-opacity duration-300" style="opacity: 1">Why Choose Our Services?</h3>
+                    <p id="service-description" class="text-gray-400 text-sm md:text-base leading-relaxed transition-opacity duration-300" style="opacity: 1">
                       We combine creativity with technical expertise to deliver solutions that not only look great but also drive results. Our team is dedicated to bringing your vision to life.
                     </p>
                   </div>
@@ -298,6 +298,9 @@
             </div>
           </div>
         </section>
+
+        <!-- Script JavaScript -->
+        <script src="services-interactive.js"></script>
 
         <section class="bg-black py-12 md:py-16 mx-auto">
           <div class="max-w-7xl mx-auto px-4 md:px-8">
@@ -607,14 +610,14 @@
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <!-- Image -->
                 <div class="w-full rounded-2xl overflow-hidden shadow-2xl">
-                  <img src="../image/Image2.jpg" alt="Mobile Application Design" class="w-full h-[500px] lg:h-[600px] object-cover" />
+                  <img src="../image/image.png" alt="Mobile Application Design" class="w-full h-[500px] lg:h-[600px] object-cover" />
                 </div>
 
                 <!-- Content -->
                 <div class="lg:pl-8">
-                  <p class="text-lime-400 text-sm font-medium uppercase tracking-wider mb-4">Product Design</p>
-                  <h3 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">Mobile Application Design</h3>
-                  <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-8">Sed ut perspiciatis unde omnis natus totam rem aperiam eaque inventore veritatis architecto beatae</p>
+                  <p class="text-lime-400 text-sm font-medium uppercase tracking-wider mb-4">Game Development</p>
+                  <h3 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">Full-Stack Game Development</h3>
+                  <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-8">Make a full-stack game using Unity and C# language</p>
                   <!-- Arrow Button -->
                   <button class="w-12 h-12 rounded-full bg-[#2a2a2a] hover:bg-lime-400 transition-all duration-300 flex items-center justify-center group">
                     <svg class="w-5 h-5 text-gray-400 group-hover:text-black transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -733,5 +736,7 @@
         </section>
       </main>
     </div>
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
