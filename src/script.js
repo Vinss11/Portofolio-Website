@@ -1,28 +1,25 @@
+// Fungsi untuk mendownload CV
+document.getElementById("downloadCV").addEventListener("click", function () {
+  // Buat link temporary
+  const link = document.createElement("a");
+  link.href = "../CV_Davin Ammar Muhammad.pdf"; // Ganti dengan path CV Anda
+  link.download = "Davin Ammar Muhammad-CV.pdf"; // Nama file saat didownload
+  link.click();
+});
+
 // Data untuk setiap service
 const servicesData = {
   1: {
     title: "UI/UX Design",
     image: "../image/Image5.jpg", // Ganti dengan path gambar Anda
     heading: "Creating Intuitive User Experiences",
-    description: "We design user interfaces that are not only visually appealing but also intuitive and user-friendly. Our UI/UX design process focuses on understanding user behavior to create seamless digital experiences.",
+    description: "Designing interfaces that prioritize clarity and ease of use. The process involves crafting visual elements that are not only aesthetic but also functional, ensuring a smooth and meaningful interaction for every user.",
   },
   2: {
     title: "Web Development",
     image: "../image/Image2.jpg",
     heading: "Building Robust Web Solutions",
-    description: "We combine creativity with technical expertise to deliver solutions that not only look great but also drive results. Our team is dedicated to bringing your vision to life.",
-  },
-  3: {
-    title: "3D Designs",
-    image: "../image/3d-design.jpg", // Ganti dengan path gambar Anda
-    heading: "Bringing Ideas to Life in 3D",
-    description: "Our 3D design services transform concepts into stunning three-dimensional visualizations. From product modeling to architectural renders, we create immersive experiences that captivate your audience.",
-  },
-  4: {
-    title: "Motion Graphics",
-    image: "../image/motion-graphics.jpg", // Ganti dengan path gambar Anda
-    heading: "Animating Your Brand Story",
-    description: "We create engaging motion graphics that tell your brand story in a dynamic way. Our animations combine creativity with strategic messaging to capture attention and communicate effectively.",
+    description: "Focus on creating scalable and high-performance web applications. Every project is built with clean code and modern technologies to ensure a reliable digital presence that meets professional standards.",
   },
 };
 
