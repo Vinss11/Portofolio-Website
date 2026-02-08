@@ -1,9 +1,16 @@
 {
+  "name": "portofolio-website",
+  "version": "1.0.0",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
     "tailwindcss": "^4.1.18"
   },
+  "devDependencies": {
+    "tailwindcss": "^4.1.18"
+  },
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && xcopy /E /I /Y src\\index.html dist\\ && xcopy /E /I /Y src\\script.js dist\\ && xcopy /E /I /Y image dist\\image",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
