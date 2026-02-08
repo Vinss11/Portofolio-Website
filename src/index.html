@@ -43,7 +43,7 @@
     <div class="min-h-screen flex flex-col">
       <!-- NAVBAR -->
       <nav class="flex-shrink-0 pt-4 px-4">
-        <div class="rounded-full bg-slate-900 shadow-lg px-6 py-3">
+        <div class="rounded-full bg-slate-900 shadow-lg px-6 py-3 relative">
           <!-- Desktop -->
           <div class="hidden md:grid grid-cols-3 items-center">
             <div class="flex justify-evenly">
@@ -62,18 +62,20 @@
           </div>
 
           <!-- Mobile -->
-          <div class="md:hidden flex items-center justify-between">
-            <span class="text-white font-semibold text-lg">Vinss Wayne</span>
-
+          <div class="md:hidden">
             <input type="checkbox" id="menu-toggle" class="hidden peer" />
-            <label for="menu-toggle" class="cursor-pointer text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </label>
+
+            <div class="flex items-center justify-between">
+              <span class="text-white font-semibold text-lg">Vinss Wayne</span>
+              <label for="menu-toggle" class="cursor-pointer text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </label>
+            </div>
 
             <div
-              class="absolute left-1/2 top-full mt-4 w-[90%] -translate-x-1/2 rounded-2xl bg-slate-900 opacity-0 scale-95 pointer-events-none peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto transition-all duration-300 z-50"
+              class="absolute left-1/2 top-full mt-4 w-full -translate-x-1/2 rounded-2xl bg-slate-900 shadow-lg opacity-0 scale-95 pointer-events-none peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto transition-all duration-300 z-50"
             >
               <div class="flex flex-col items-center gap-4 py-4">
                 <a href="#" class="nav-link">Home</a>
@@ -87,7 +89,6 @@
           </div>
         </div>
       </nav>
-
       <!-- MAIN -->
       <main class="flex-1 overflow-auto">
         <!-- HERO WRAPPER -->
@@ -119,8 +120,8 @@
                 <img src="../image/image3.png" alt="Hero" class="relative z-10 max-h-[350px] md:max-h-[400px] lg:max-h-[450px] object-contain" />
 
                 <!-- Buttons -->
-                <div class="absolute -bottom-6 flex flex-col sm:flex-row gap-3 bg-white/80 backdrop-blur-sm px-5 py-4 rounded-xl shadow-lg z-20 ">
-                  <button id="downloadCV" class="px-9 py-2.5 rounded-full bg-lime-400 text-black font-semibold hover:bg-lime-500 transition whitespace-nowrap hover:cursor-pointer">Download CV</button>                 
+                <div class="absolute -bottom-6 flex flex-col sm:flex-row gap-3 bg-white/80 backdrop-blur-sm px-5 py-4 rounded-xl shadow-lg z-20">
+                  <button id="downloadCV" class="px-9 py-2.5 rounded-full bg-lime-400 text-black font-semibold hover:bg-lime-500 transition whitespace-nowrap hover:cursor-pointer">Download CV</button>
                 </div>
               </div>
 
@@ -282,11 +283,11 @@
           <div class="max-w-7xl mx-auto px-4 md:px-8">
             <!-- Text dengan tanda + -->
             <div class="text-center mb-1 md:mb-1.5">
-              <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+              <h2 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl whitespace-nowrap overflow-x-auto">
                 <span class="text-white">Innovate</span>
-                <span class="text-lime-400 mx-3 md:mx-4">-</span>
+                <span class="text-lime-400 mx-2 sm:mx-3 md:mx-4">-</span>
                 <span class="text-white">Inspire</span>
-                <span class="text-lime-400 mx-3 md:mx-4">-</span>
+                <span class="text-lime-400 mx-2 sm:mx-3 md:mx-4">-</span>
                 <span class="text-white">Create</span>
               </h2>
             </div>
@@ -703,9 +704,6 @@
                 <!-- Image -->
                 <div class="w-full rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2">
                   <img src="../image/Image2.jpg" alt="Website Makeup Design" class="w-full h-[500px] lg:h-[600px] object-cover" />
-                </div>
-              </div>
-              
                 </div>
               </div>
             </div>
